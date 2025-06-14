@@ -1,54 +1,79 @@
-# React + TypeScript + Vite
+# React Component Library — Built with Vite + Tailwind CSS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to `iteratex-component-library` — a lightweight and customizable React component library powered by **Vite**, styled with **Tailwind CSS**, and built for speed, reusability, and scalability.
 
-Currently, two official plugins are available:
+> **Watch the full YouTube tutorial here:**  
+> [![Build & Publish React Component Library](https://img.shields.io/badge/Watch%20on-YouTube-red?style=for-the-badge&logo=youtube)](https://youtu.be/iC8bmSuBDZ8)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- ⚡ Super fast build with [Vite](https://vitejs.dev)
+- 🌊 Utility-first styling with [Tailwind CSS](https://tailwindcss.com)
+- 📦 Publish-ready for npm
+- ✅ Tested with a consumer app before release
+- ✨ Includes reusable components like **Button** and **Badge**
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+---
+
+## 📦 Installation
+
+```bash
+npm install iteratex-component-library
+# or
+yarn add iteratex-component-library
+````
+
+---
+
+## 🛠️ Usage
+
+```tsx
+import { Button, Badge } from 'iteratex-component-library';
+
+function App() {
+  return (
+    <div>
+      <Button>Click Me</Button>
+      <Badge color="green">New</Badge>
+    </div>
+  );
+}
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+> ✅ Components are tree-shakable and styled using Tailwind classes.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 🧱 Components
+
+| Component | Description           |
+| --------- | --------------------- |
+| `Button`  | A customizable button |
+| `Badge`   | A styled status label |
+
+---
+
+
+## 📺 Watch the Tutorial
+
+This project was built as part of a step-by-step YouTube tutorial:
+🎥 [Build & Publish React Component Library](https://youtu.be/iC8bmSuBDZ8)
+
+---
+
+## 🔧 Tech Stack
+
+* React
+* Vite
+* Tailwind CSS
+* TypeScript
+* npm
+
+---
+
+## 🤝 Contributing
+
+Feel free to open issues or PRs if you find bugs or want to improve the library. Contributions are welcome!
+
